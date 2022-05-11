@@ -43,11 +43,11 @@ $on-large:         $on-laptop !default;
 
 // Import pre-styling-overrides hook and style-partials.
 @import
-  // "minima/custom-variables", // Hook to override predefined variables.
-  // "minima/base",             // Defines element resets.
-  // "minima/layout",           // Defines structure and style based on CSS selectors.
-  // "minima/custom-styles"     // Hook to override existing styles.
-  "styles/style.css" 
+  "minima/custom-variables", // Hook to override predefined variables.
+  "minima/base",             // Defines element resets.
+  "minima/layout",           // Defines structure and style based on CSS selectors.
+  "minima/custom-styles"     // Hook to override existing styles.
+  // "styles/style.css" 
 
   // ESTAVA A TENTAR ANULAR COMPLETAMENTE O MINIMA E IMPORTAR O CSS QUE EU FIZ, DE RAIZ
 ;

@@ -20,13 +20,12 @@ layout: default
 
 
   {%- if posts.size > 0 -%} <!--- se houver mais do que 0 posts na pasta posts--->
-    {%- if page.list_title -%} <!--- se a página tiver uma título?--->
+    {%- if page.list_title -%} <!--- se a página tiver uma título (?)--->
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <ul class="post-list">
+    <div class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-        {%- if post != 7 -%} <!-- ## QUERIA LIMITAR O Nº DE POSTS QUE APARECEM PARA 6, PQ É Q NÃO FUNCIONA??-->
+      {%- for post in posts limit:4 -%}
         <li>
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
@@ -38,7 +37,6 @@ layout: default
             </a>
           </h3> -->
         </li>
-        {%- endif -%}
       {%- endfor -%}
     </ul>
 
