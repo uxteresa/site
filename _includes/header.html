@@ -1,28 +1,28 @@
-<header class="site-header">
+<header>
+  <nav>
+      {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
+      {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+      <a class="site-title logo" rel="author" href="{{ "/" | relative_url }}">
+        <h1>{{ site.author.title | escape }}</h1></a> <!--isto é o logotipo -->
 
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.author.title | escape }}</a> <!--isto é o logotipo -->
+      {%- if titles_size > 0 -%}
+        <div id="myLinks">
 
-    {%- if titles_size > 0 -%}
-      <nav id="myLinks">
+          <ul>
+            {%- for path in page_paths -%}
+              {%- assign my_page = site.pages | where: "path", path | first -%}
+              {%- if my_page.title -%}
+              <li>
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase}}</a> <!--- isto são os links da nav --->
+              </li>
+              
+              {%- endif -%}
+            {%- endfor -%}
 
-        <ul>
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <li>
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape | upcase}}</a> <!--- isto são os links da nav --->
-            </li>
-            
-            {%- endif -%}
-          {%- endfor -%}
-
-            <a href="/docs/CV.pdf" target="_blank"><span title="Resume"><img class="cv-icon" src="icons/cv.svg" alt="Icon Resume" height="50px"></span></a>
-        </ul>
-      </nav>
-    {%- endif -%}
-  </div>
+              <a href="/docs/CV.pdf" target="_blank"><span title="Resume"><img class="cv-icon" src="icons/cv.svg" alt="Icon Resume" height="50px"></span></a>
+          </ul>
+        </div>
+      {%- endif -%}
+  </nav>
 </header>
