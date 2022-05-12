@@ -3,7 +3,7 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-      <a class="site-title logo" rel="author" href="{{ "/" | relative_url }}">
+      <a class="logo" rel="author" href="{{ "/" | relative_url }}">
         <h1>{{ site.author.title | escape }}</h1></a> <!--isto é o logotipo -->
 
       {%- if titles_size > 0 -%}
@@ -19,9 +19,10 @@
               
               {%- endif -%}
             {%- endfor -%}
-
+              <li>
               <a href="/docs/CV.pdf" target="_blank"><span title="Resume"><img class="cv-icon" src="icons/cv.svg" alt="Icon Resume" height="50px"></span></a>
-          </ul>
+              </li>
+            </ul>
         </div>
       {%- endif -%}
   </nav>
