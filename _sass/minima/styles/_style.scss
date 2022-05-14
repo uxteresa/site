@@ -176,7 +176,7 @@
     font-family: 'Zen Dots', 'Verdana', cursive;
     font-weight: normal;
     color: var(--white);
-    animation: marquee 7s linear 0s infinite;
+    animation: marquee 10s linear 0s infinite;
   }
   
   .intro:hover {
@@ -243,8 +243,8 @@
   
   .thumbnail {
     margin: 0px 0px 20px 0px;
-    -webkit-box-shadow: 15px 15px 0px 0px var(--pink);
-            box-shadow: 15px 15px 0px 0px var(--pink);
+    -webkit-box-shadow: 0px 20px 0px 0px var(--pink);
+            box-shadow: 0px 20px 0px 0px var(--pink);
     border: solid 3px var(--white);
     border-radius: 7px;
     transition: 0.2s ease-in-out;
@@ -252,7 +252,7 @@
   }
   
   .thumbnail:hover {
-    margin: 20px -20px 20px 0px;
+    margin: 20px 0px 20px 0px;
     -webkit-box-shadow: 0px 0px 0px 0px var(--pink);
     box-shadow: 0px 0px 0px 0px var(--pink);
 }
