@@ -176,7 +176,7 @@
     font-family: 'Zen Dots', 'Verdana', cursive;
     font-weight: normal;
     color: var(--white);
-    animation: marquee 5s linear 0s infinite;
+    animation: marquee 7s linear 0s infinite;
   }
   
   .intro:hover {
@@ -501,7 +501,7 @@
     .intro {
         font-size: 4.6rem;
         line-height: 5.2rem;
-        animation: marquee 7s linear 0s infinite;
+        animation: marquee 12s linear 0s infinite;
     }
 
   
@@ -510,8 +510,8 @@
     }
   
     .thumbnail {
-        -webkit-box-shadow: 2vw 2vw 0px 0px var(--pink);
-                box-shadow: 2vw 2vw 0px 0px var(--pink);
+        -webkit-box-shadow: 3vw 3vw 0px 0px var(--pink);
+                box-shadow: 3vw 3vw 0px 0px var(--pink);
     }
   
     .about-container {
