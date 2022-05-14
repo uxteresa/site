@@ -3,3 +3,13 @@ layout: default
 ---
 
 {{ page.title | upcase}}
+
+{% for post in site.posts %}
+    {{ post.excerpt }}
+{% endfor %}
+
+Personal Projects
+
+{% for post in site.personal %}
+    {{ post.excerpt }}
+{% endfor %}

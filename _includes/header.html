@@ -25,5 +25,35 @@
             </ul>
         </div>
       {%- endif -%}
+
+                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <img class="menu-icon" src="icons/icone-menu.png" alt="Icon Menu" height="50px">
+              </a>
+              </a>
   </nav>
 </header>
+
+<script>
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function myFunction() {
+    var menu = document.getElementById("myLinks");
+  
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+  
+    } else {
+      menu.style.display = "block";
+    }
+  }
+  
+  
+  
+function scrollToSection(elementName) {
+  const element = document.querySelector(elementName);
+
+  element.scrollIntoView({
+       behavior: "smooth"
+  })
+}
+  </script>
