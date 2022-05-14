@@ -1,3 +1,4 @@
+
 :root {
     --purple: rgb(79, 28, 223);
     --purples: 79, 28, 223;
@@ -9,35 +10,39 @@
     --margin-nav: 40px;
     --padd-main-h: 20px;
     --padd-main-v: 60px;
-}
- 
-body {
+  }
+  
+  body {
     margin: 0;
     background-color: var(--purple);
     font-family: 'Titillium Web', 'Futura', sans-serif;
-}
-
-img {
+  }
+  
+  img {
     display: flex;
-}
-
-video {
+  }
+  
+  video {
     display: block;
-}
-
-.overlay {
+  }
+  
+  svg {
+    fill: var(--white);
+  }
+  
+  .overlay {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url("img/10-deg_trans_grid_overlay_invertido.png");
+    background-image: url("overlay/10-deg_trans_grid_overlay_invertido.png");
     background-size: cover;
     z-index: -1;
     opacity: 0.3;
-}
-
-/* ------ NAVIGATION ------ */
-
-header {
+  }
+  
+  /* ------ NAVIGATION ------ */
+  
+  header {
     height: 15vh;
     width: 100%; 
     top: 0;
@@ -60,8 +65,8 @@ header {
     top: 0;
     background-color: rgba(var(--purples), 0.9);
     z-index: 0;
-}
-
+  }
+  
   
   /* Style the hamburger menu */
   nav a.icon {
@@ -124,11 +129,11 @@ header {
   .cv-icon {
     display: inline;
   }
-
-/* ------ MAIN ------ */
-
+  
+  /* ------ MAIN ------ */
+  
   /* Style Marquee with introduction*/
-.intro {
+  .intro {
     padding: 4vh 0px 4vh 0px;
     margin-top: 0vh;
     font-size: 3.4rem;
@@ -136,26 +141,26 @@ header {
     font-family: 'Zen Dots', 'Verdana', cursive;
     font-weight: normal;
     color: var(--white);
-
+  
     border-top: solid 6px var(--white);
     border-left: none;
     border-right: none;
     border-bottom: solid 6px var(--white);
-}
-
-
-
-/* ------- WORK -------*/
-
-
-/* Style projects position*/
-.work {
+  }
+  
+  
+  
+  /* ------- WORK -------*/
+  
+  
+  /* Style projects position*/
+  .work {
     padding-top: var(--padd-main-v);
-}
-
-/* Style project columns*/
-.col1,.col2, .col3 {
-    width: 80%;
+  }
+  
+  /* Style project columns*/
+  .col1,.col2, .col3 {
+    width: 90%;
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
     display: -webkit-box;
@@ -165,51 +170,51 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-}
-
-/* Remove bottom margin  from last project*/
-.col3 :last-child {
+  }
+  
+  /* Remove bottom margin  from last project*/
+  .col3 :last-child {
     margin-bottom: 0px;
-}
-
-.card {
+  }
+  
+  .card {
     margin-bottom: 40px;
-}
-
-/* Style Proect titles */
-.card h2 {
+  }
+  
+  /* Style Proect titles */
+  .card h2 {
     margin-top: 40px;
-}
-
-.thumbnail {
+  }
+  
+  .thumbnail {
     margin: 0px 0px 20px 0px;
     -webkit-box-shadow: 15px 15px 0px 0px var(--pink);
             box-shadow: 15px 15px 0px 0px var(--pink);
     border: solid 3px var(--white);
     border-radius: 7px;
-}
-
-
-/* -------- ABOUT BACKGROUND -------- */
-
-/*Style abut section (main div)*/
-.about {
+  }
+  
+  
+  /* -------- ABOUT BACKGROUND -------- */
+  
+  /*Style abut section (main div)*/
+  .about {
     position: relative;
     margin: 60px 0px 120px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-}
-
-/* Center container of content */
-.about-container {
+  }
+  
+  /* Center container of content */
+  .about-container {
     max-width: 100vw;
     margin: 0 auto;
     padding: calc(2 * var(--padd-main-v)) var(--padd-main-h);
-}
-
-.back-info-container {
+  }
+  
+  .back-info-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -218,28 +223,28 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 80px;
-}
-
-
-/* -------- BACKGROUND -------- */
-
-.back-info h4 {
+  }
+  
+  
+  /* -------- BACKGROUND -------- */
+  
+  .back-info h4 {
     margin-bottom: 10px;
-}
-
-.back-info h5 {
+  }
+  
+  .back-info h5 {
     margin-bottom: 5px;
-}
-
-.back-info h6 {
+  }
+  
+  .back-info h6 {
     margin-bottom: var(--padd-main-h);
     color: var(--grey);
-}
-
-
-/* ------- SKILLS ------ */
-
-.skills ul {
+  }
+  
+  
+  /* ------- SKILLS ------ */
+  
+  .skills ul {
     padding: 30px 0px 30px 0px;
     list-style-type: none;
     font-size: 1.3rem;
@@ -247,23 +252,23 @@ header {
     display: block;
     margin-left: 0px;
     color: var(--white);
-}
-
-/* Style horizontal word spacing (mobile) */
-.skills li {
+  }
+  
+  /* Style horizontal word spacing (mobile) */
+  .skills li {
     padding: 10px 0;
-}
-
-
-/* Style skills container background */
-.skills {
+  }
+  
+  
+  /* Style skills container background */
+  .skills {
     background-image: -o-linear-gradient(280deg, var(--pink), var(--blue));
     background-image: linear-gradient(170deg, var(--pink), var(--blue));
-}
-
-/* ------- FOOTER ------*/
-
-footer {
+  }
+  
+  /* ------- FOOTER ------*/
+  
+  footer {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -281,10 +286,10 @@ footer {
     height: 100px;
     bottom: 0;
     padding: var(--padd-main-v) var(--padd-main-h);
-}
-
-/* Style social media icons */
-footer ul {
+  }
+  
+  /* Style social media icons */
+  footer ul {
     list-style-type: none;
     margin: 0 var(--padd-main-h);
     padding: 0;
@@ -295,28 +300,28 @@ footer ul {
         -ms-flex-pack: end;
             justify-content: flex-end;
     gap: 20px;
-}
-
-/* Style Copyright mark*/
-footer p {
+  }
+  
+  /* Style Copyright mark*/
+  footer p {
     bottom: 50%;
     -webkit-transform: translatey(-50%);
         -ms-transform: translatey(-50%);
             transform: translatey(-50%);
     font-size: 1.2rem;
-}
-
-/* Style logo*/
-h1 {
+  }
+  
+  /* Style logo*/
+  h1 {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--white);
-}
-
-/* Style project titles */
-h3 {
+  }
+  
+  /* Style project titles */
+  h3 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -325,137 +330,138 @@ h3 {
     padding: 10px 15px;
     margin: 0px 20px 40px 20px; 
     font-size: 1.2rem;
-}
-
-h2, p {
+  }
+  
+  h2, p {
     margin: 0 var(--padd-main-h);
-}
-
-/* Style section tags */
-h2 {
+  }
+  
+  /* Style section tags */
+  h2 a {
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--white);
-}
-
-h3 {
+    text-decoration: none;
+  }
+  
+  h3 {
     text-transform: uppercase;
-}
-
-/* Positioning texts in background */
-h4, h5, h6{
+  }
+  
+  /* Positioning texts in background */
+  h4, h5, h6{
     color: var(--white);
     margin: 0px var(--padd-main-h);
     padding: 0;
-}
-
-/* Style section tags */
-h4 {
+  }
+  
+  /* Style section tags */
+  h4 {
     font-size: 1.3rem;
     font-weight: 100;
-}
-
-h5 {
+  }
+  
+  h5 {
     font-size: 1.5rem;
     font-weight: 400;
-}
-
-h6 {
+  }
+  
+  h6 {
     font-size: 1rem;
     font-weight: 300;
-}
-
-p, p.big {
+  }
+  
+  p, p.big {
     padding-right: 0px;
-}
-
-p {
+  }
+  
+  p {
     color: var(--grey);
     font-size: 1.3rem;
     line-height: 2rem;
-}
-
-p.big {
+  }
+  
+  p.big {
     font-size: 1.7rem;
     line-height: 2.8rem;
     margin-bottom: 35px;
     color: var(--white);
-}
-
-/* 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-. 
-*/
-
-/* TABLET ................................ */
-@media only screen and (min-width: 560px) {
-
+  }
+  
+  /* 
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  . 
+  */
+  
+  /* TABLET ................................ */
+  @media only screen and (min-width: 560px) {
+  
     header {
         height: 11vh;
     }
-
+  
     nav a.logo {
         padding-left: calc(1 * var(--padd-main-h));
     }
-
+  
     nav a.icon {
         padding-right: calc(1 * var(--padd-main-h));
     }
-
-
+  
+  
     #myLinks {
         width: 50vw;
         right: 0;
     }
-
+  
     .intro {
         font-size: 4.6rem;
         line-height: 5.2rem;
     }
-
+  
     .col1, .col2, .col3 {
         max-width: 55%;
     }
-
+  
     .thumbnail {
         -webkit-box-shadow: 2vw 2vw 0px 0px var(--pink);
                 box-shadow: 2vw 2vw 0px 0px var(--pink);
     }
-
+  
     .about-container {
         max-width: 580px;
         margin: 0 auto;
         padding-top: calc(2 * var(--padd-main-v));
         padding-bottom: calc(2 * var(--padd-main-v));
     }
-
+  
         
     #background > .about-container {
         max-width: 580px;
     }
-
-
+  
+  
     footer {
         max-width: 100vw;
         height: auto;
@@ -466,62 +472,62 @@ p.big {
             -ms-flex-direction: row;
                 flex-direction: row;
     }
-
+  
     footer p {
         bottom: 0;
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none;
     }
-
+  
     
-}
-
-/* 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-. 
-*/
-
-/* DESKTOP................................... */
-@media only screen and (min-width: 1020px) {
-
+  }
+  
+  /* 
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  . 
+  */
+  
+  /* DESKTOP................................... */
+  @media only screen and (min-width: 1020px) {
+  
     header {
         height: 15vh;
     }
-
+  
     nav {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         padding: 0 calc(2*var(--margin-nav));
     }
-
+  
     nav a.logo {
         left: auto;
         padding-left: 0;
     }
-
+  
     /* Put menu on navbar (top)*/
     #myLinks {
         width: 100vw;
@@ -537,7 +543,7 @@ p.big {
         background-color: rgba(0, 0, 0, 0);
         z-index: 0;
     }
-
+  
     nav ul {
         position: absolute;
         display: -webkit-box;
@@ -562,12 +568,12 @@ p.big {
     nav ul li a {
         font-size: 1.2rem;
     }
-
+  
     /* Remove right padding from last li in the nav*/
     nav ul > li:last-child a {
         padding-right: 0;
     }
-
+  
     .intro {
         font-size: 5.3rem;
     }
@@ -575,7 +581,7 @@ p.big {
     .menu-icon {
         display: none;
     }
-
+  
     .work { 
         max-width: 100vw;
         padding-left: calc(2.3 * var(--padd-main-v));
@@ -623,16 +629,16 @@ p.big {
         padding-top: calc(2.5 * var(--padd-main-v));
         padding-right: calc(2 * var(--padd-main-v));
     }
-
+  
     .back-info:first-of-type {
         margin-right: 20px;
     }
-
+  
     .thumbnail {
         -webkit-box-shadow: 24px 22px 0px 0px var(--pink);
                 box-shadow: 24px 22px 0px 0px var(--pink);
     }
-
+  
     .skills ul {
         max-width: 1280px;
         margin: 0 auto;
@@ -642,11 +648,11 @@ p.big {
         -ms-flex-pack: distribute;
             justify-content: space-around;
     }
-
+  
     .skills li {
         padding: 15px 25px;
     }
-
+  
     .back-info-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -657,29 +663,29 @@ p.big {
                 flex-direction: row;
         gap: 20px;
     }
-
+  
     /* Putting divs side by side */
     #background div :last-of-type :not(p, h4, h5, h6) {
         margin: 0;
         padding: 0;
     }
-
+  
     .back-info-container :first-child { 
         margin-right: 70px;
     }
-
-
+  
+  
     footer {
         max-width: 100vw;
         margin: 0px auto;
         padding: var(--padd-main-v) var(--padd-main-v) calc(2 * var(--margin-nav));
     }
-
-
+  
+  
     h1 {
         font-size: 1.8rem;
     }
-
+  
     .about p {
         color: var(--white);
     }
@@ -694,4 +700,5 @@ p.big {
         margin-bottom: 50px;
     }
     
-}
+  }
+  
