@@ -1,12 +1,15 @@
 
 :root {
     --purple: rgb(79, 28, 223);
+    --lite-purple: rgb(209, 194, 250);
     --purples: 79, 28, 223;
+    --dark-purple: rgb(34, 1, 125);
     --blue: rgb(23, 150, 235);
     --pink: rgb(205, 57, 245);
     --black: rgb(38, 30, 46);
     --white: rgb(255, 255, 255);
     --grey: rgb(205, 197, 226);
+    --dark-grey: rgb(141, 131, 169);
     --margin-nav: 40px;
     --padd-main-h: 20px;
     --padd-main-v: 60px;
@@ -178,10 +181,12 @@
     font-weight: normal;
     color: var(--white);
     animation: marquee 10s linear 0s infinite;
+    transition: color 0.3s ease-in-out;
   }
   
   .intro:hover {
       animation-play-state: paused;
+      color: var(--lite-purple);
   }
 
   .intro:not( :hover ) {
@@ -248,18 +253,19 @@
             box-shadow: 0px 20px 0px 0px var(--pink);
     border: solid 4px var(--white);
     border-radius: 7px;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-out;
     // cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E %3Cpath fill='DeepSkyBlue' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019  c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667  l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E %3C/svg%3E"), pointer;
   }
   
   .thumbnail:hover {
     margin: 20px 0px 20px 0px;
     -webkit-box-shadow: 0px 0px 0px 0px var(--pink);
-    box-shadow: 0px 0px 0px 0px var(--pink);
-    border-color: var(--white);
-    border-width: 8px;
-    border-radius: 12px;
-    border-style: dotted;
+    // box-shadow: 10px 10px 0px 30px var(--dark-purple);
+    box-shadow: 0px 0px 0px 10px var(--dark-purple);
+    border-color: var(--purple);
+    border-width: 6px;
+    // border-radius: 12px;
+    // border-style: dotted;
 }
 
   
