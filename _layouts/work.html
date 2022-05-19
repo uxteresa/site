@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
+<div class="projects">
 
-{{ page.title | upcase}}
+    {% for post in site.posts %}
+        {{ post.excerpt }}
+    {% endfor %}
 
-{% for post in site.posts %}
-    {{ post.excerpt }}
-{% endfor %}
+</div>
 
 Personal Projects
 
-{% for post in site.personal %}
-    {{ post.excerpt }}
-{% endfor %}
+<div class="personal">
+    {% for post in site.personal %}
+        {{ post.excerpt }}
+    {% endfor %}
+</div>

@@ -2,7 +2,10 @@
 layout: default
 ---
 
-{{ page.title | escape }}
+<div class="contact">
+    <h1>{{ page.title | escape }}</h1>
+    {{ content }}
+    <a href="mailto:{{ site.author.email }}"><p class="button">Get in touch!</p></a>
 
-{{ content }}
-{{ site.author.email }}
+    <p>or find me on the internet</p>
+</div>
