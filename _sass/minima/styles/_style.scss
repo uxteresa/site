@@ -704,10 +704,10 @@ a {
       padding: 0 calc(2*var(--margin-nav));
   }
 
-  nav a.logo {
-      left: auto;
-      padding-left: 0;
-  }
+  // nav a.logo {
+  //     left: auto;
+  //     padding-left: 0;
+  // }
 
   /* Put menu on navbar (top)*/
   #myLinks {
@@ -760,7 +760,7 @@ a {
   }
 
   .slide {
-    animation: marquee 25s linear 0s infinite;
+    animation: marquee 23s linear 0s infinite;
   }
   
   .menu-icon {
@@ -865,7 +865,7 @@ a {
 
 
   h1 {
-      font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .about p {
