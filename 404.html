@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: 404
 ---
 
 <style type="text/css" media="screen">
@@ -18,9 +18,18 @@ layout: default
   }
 </style>
 
+<header>
+  <nav>
+      {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
+      {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+      <a class="logo" rel="author" href="{{ "/" | relative_url }}">
+        <h1>{{ site.author.title | escape }}</h1></a> <!--isto é o logotipo -->
+  </nav>
+</header>
+
 <div class="div404">
-  <h1>Teresa</h1>
-  <h2>404</h2>
+  <h2 class="intro">404</h2>
 
   <h3><strong>Yawza!</strong></h3>
   <img src="https://static.wixstatic.com/media/6f7685_b92e42e6542e49f7b4d0d9fc90e120b0~mv2.gif">
@@ -28,3 +37,5 @@ layout: default
   <p>Let's take you back</p>
   <a href="{{ site.baseurl }}/"><p class="button">Take me back to homepage!</p></a>
 </div>
+
+

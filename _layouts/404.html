@@ -1,3 +1,22 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body id="home">
+    <div class="overlay"></div>
+
+
+    <main aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- if page.url == '/'-%}
+      {%- include footer.html -%}
+    {%- endif -%}
+
+  </body>
+
+</html>

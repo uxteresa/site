@@ -21,6 +21,7 @@
 .button {
   width:max-content;
   margin: 0px 0px 0px 0px;
+  padding: 20px 60px;
   -webkit-box-shadow: 0px 20px 0px 0px var(--pink);
           box-shadow: 0px 20px 0px 0px var(--pink);
   border: solid 4px var(--white);
@@ -204,16 +205,19 @@ nav ul li {
   font-family: 'Zen Dots', 'Verdana', cursive;
   font-weight: normal;
   color: var(--white);
-  animation: marquee 10s linear 0s infinite;
   transition: color 0.3s ease-in-out;
 }
 
-.intro:hover {
+.slide {
+  animation: marquee 10s linear 0s infinite;
+}
+
+.slide:hover {
     animation-play-state: paused;
     color: var(--lite-purple);
 }
 
-.intro:not( :hover ) {
+.slide:not( :hover ) {
   animation-play-state: running;
 }
 
@@ -543,9 +547,12 @@ p.big {
   }
 
   .intro {
-      font-size: 4.6rem;
-      line-height: 5.2rem;
-      animation: marquee 12s linear 0s infinite;
+    font-size: 4.6rem;
+    line-height: 5.2rem;
+  }
+
+  .slide {
+    animation: marquee 12s linear 0s infinite;
   }
 
 
@@ -598,6 +605,10 @@ p.big {
       -webkit-transform: none;
           -ms-transform: none;
               transform: none;
+  }
+
+  h1 {
+    font-size: 1.8rem;
   }
 
   .projects, .personal {
@@ -703,10 +714,13 @@ p.big {
   }
 
   .intro {
-      font-size: 5.3rem;
-      animation: marquee 25s linear 0s infinite;
+    font-size: 5.3rem;
   }
   
+  .slide {
+    animation: marquee 25s linear 0s infinite;
+  }
+
   .menu-icon {
       display: none;
   }
@@ -805,11 +819,6 @@ p.big {
       max-width: 100vw;
       margin: 0px auto;
       padding: var(--padd-main-v) var(--padd-main-v) calc(2 * var(--margin-nav));
-  }
-
-
-  h1 {
-      font-size: 1.5rem;
   }
 
   .about p {
