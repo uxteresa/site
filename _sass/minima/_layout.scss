@@ -14,6 +14,10 @@
   --padd-main-v: 60px;
 }
 
+.opaque {
+  background-color: var(--purple);
+}
+
 .active {
   color: var(--pink);
 }
@@ -83,6 +87,7 @@ header {
 nav {
   position: relative;
   height: 100%;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* Style Menu Div (hidden as default)*/
@@ -355,24 +360,18 @@ nav ul li {
   padding: 30px 0px 30px 0px;
   list-style-type: none;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 3.5rem;
   text-align: center;
   display: block;
   margin-left: 0px;
   color: var(--white);
   overflow: hidden;
+  white-space: nowrap;
 }
 
 /* Style horizontal word spacing (mobile) */
 .skills li {
   padding: 10px 0;
-}
-
-
-/* Style skills container background */
-.skills {
-  background-image: -o-linear-gradient(280deg, var(--pink), var(--blue));
-  background-image: linear-gradient(170deg, var(--pink), var(--blue));
 }
 
 
@@ -427,7 +426,7 @@ footer p {
 /* Style logo*/
 h1 {
   margin: 0;
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 1rem 0.3rem 0;
   font-size: 1.6rem;
   font-weight: 400;
 }

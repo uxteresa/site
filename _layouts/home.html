@@ -86,29 +86,38 @@ layout: default
       </div>
   </div>
 
+  <div style="overflow: hidden;">
+    <div class="skills intro slide">
+      <ul>
+          <li>UX design </li>
+          <li>UI design</li>
+          <li>UX Research</li>
+          <li>wireframing</li>
+          <li>prototyping</li>
+      </ul>
+    </div>
+  </div>
 
-  <div class="skills intro">
-    <ul>
-        <li>UX design </li>
-        <li>UI design</li>
-        <li>UX Research</li>
-        <li>Wireframing</li>
-        <li>Prototyping</li>
-    </ul>
+  <div id="about" class="about">
+    <div class="about-container">
+      <h3>my process</h3>
+    </div>
+  </div>
 </div>
+
 
 </div>
 
 <script>
-  const textPath = document.querySelector("#text-path");
+  
+  const nav = document.querySelector("nav");
 
-  const h = document.documentElement, 
-        b = document.body,
-        st = 'scrollTop',
-        sh = 'scrollHeight';
-
-  document.addEventListener("scroll", e => {
-    let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-    textPath.setAttribute("startOffset", (-percent * 40) + 1200)
+  window.addEventListener("scroll", () => {
+    if (window.scrollY !== 0) {
+      nav.classList.add("opaque");
+    } else {
+      nav.classList.remove("opaque");
+    }
   });
+
 </script>
