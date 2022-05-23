@@ -86,17 +86,16 @@ layout: default
       </div>
   </div>
 
-  <div>
-    <div class="skills intro">
-      <ul class="scrolltext">
-          <li>UX design </li>
-          <li>UI design</li>
-          <li>UX Research</li>
-          <li>wireframing</li>
-          <li>prototyping</li>
-      </ul>
-    </div>
+  <div id="scrollCont" class="skills intro" style="overflow: visible;">
+    <ul class="scrolltext">
+        <li>UX design </li>
+        <li>UI design</li>
+        <li>UX Research</li>
+        <li>wireframing</li>
+        <li>prototyping</li>
+    </ul>
   </div>
+
 
   <div id="about" class="about">
     <div class="about-container">
@@ -112,6 +111,7 @@ layout: default
   
   const nav = document.querySelector("nav");
   const text = document.querySelector(".scrolltext");
+  const container = document.querySelector("#scrollCont");
 
   window.addEventListener("scroll", () => {
     if (window.scrollY !== 0) {
@@ -122,4 +122,10 @@ layout: default
 
     text.style.transform = `translateX(-${window.scrollY}px)`;
   });
+
+  if (window.scrollY > container.getBoundingClientRect().top) {
+    text.style.transform = `translateX(-${
+      window.scrollY - container.getBoundingClientRect().top
+    }px)`;
+  }
 </script>
