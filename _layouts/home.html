@@ -123,7 +123,7 @@ layout: default
   if (window.scrollY > container.getBoundingClientRect().top) {
     console.log("container: ", container.getBoundingClientRect().top);
     text.style.transform = `translateX(-${
-      window.scrollY - container.getBoundingClientRect().top
+      window.scrollY - container.getBoundingClientRect().bottom
     }px)`;
    }
   });
