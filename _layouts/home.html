@@ -86,9 +86,9 @@ layout: default
       </div>
   </div>
 
-  <div style="overflow: hidden;">
-    <div class="skills intro slide">
-      <ul>
+  <div>
+    <div class="skills intro">
+      <ul class="scrolltext">
           <li>UX design </li>
           <li>UI design</li>
           <li>UX Research</li>
@@ -111,6 +111,7 @@ layout: default
 <script>
   
   const nav = document.querySelector("nav");
+  const text = document.querySelector(".scrolltext");
 
   window.addEventListener("scroll", () => {
     if (window.scrollY !== 0) {
@@ -118,6 +119,7 @@ layout: default
     } else {
       nav.classList.remove("opaque");
     }
-  });
 
+    text.style.transform = `translateX(${window.scrollY}px)`;
+  });
 </script>
