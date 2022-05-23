@@ -120,13 +120,11 @@ layout: default
       nav.classList.remove("opaque");
     }
 
-    text.style.transform = `translateX(-${window.scrollY}px)`;
-  });
-
   if (window.scrollY > container.getBoundingClientRect().top) {
     console.log("container: ", container.getBoundingClientRect().top);
     text.style.transform = `translateX(-${
-      window.scrollY - container.getBoundingClientRect().top * 3
+      window.scrollY - container.getBoundingClientRect().top
     }px)`;
- }
+   }
+  });
 </script>
