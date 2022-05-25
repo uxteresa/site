@@ -38,6 +38,11 @@
 </header>
 
 <script>
+
+  const nav = document.querySelector("nav");
+  const text = document.querySelector(".scrolltext");
+  const container = document.querySelector("#scrollCont");
+
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
   function myFunction() {
     var menu = document.getElementById("myLinks");
@@ -49,14 +54,27 @@
       menu.style.display = "block";
     }
   }
-  
-  
-  
-function scrollToSection(elementName) {
-  const element = document.querySelector(elementName);
 
-  element.scrollIntoView({
-       behavior: "smooth"
-  })
-}
+
+// Navbar opaque on scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY !== 0) {
+      nav.classList.add("opaque");
+    } else {
+      nav.classList.remove("opaque");
+    }
+
+  if (window.scrollY > container.getBoundingClientRect().top) {
+    console.log("container: ", container.getBoundingClientRect().top);
+    text.style.transform = `translateX(window.innerWidth - ${window.scrollY - container.getBoundingClientRect().top}px)`;
+   }
+  });
+
   </script>
+
+
+
+
+
+  
+
