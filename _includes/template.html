@@ -1,4 +1,3 @@
-
 <h3 class="title">The challenge</h3>
 <p>{{ challenge }}</p>
 
@@ -25,3 +24,15 @@ Want to see more?
 
 Other projects
 
+{%- for post in site.posts limit:2 -%}
+    {% assign curr = page.url %}
+    {% if curr == post.permalink %}
+        curr = {{ curr }}
+        post-permalink = {{ post.permalink }}
+        {% continue %}
+   {%  else %} 
+        {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
