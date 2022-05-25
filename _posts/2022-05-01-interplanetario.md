@@ -9,3 +9,5 @@ sumup: Mobile App
 ---
 
 {%- include card.html content1="interplanetario.webm" -%}
+
+{% include template.html %}

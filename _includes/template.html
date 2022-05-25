@@ -6,7 +6,34 @@
 <h3 class="title">The process</h3>
 <p>{{ process }}</p>
 
-<p>{{ ins }}</p>
+<h4>Major insights</h4>
+<p class="intro">{{ page.mj1 }} {{ page.mj2 }} {{ page.mj3 }}</p>
 
-<h3 class="title">The challenge</h3>
-<p>{{ process }}</p>
+<div>
+    <p>{{ ins }}</p>
+    <img src="https://www.hdwallpaper.nu/wp-content/uploads/2015/02/Funny-Cat-Hidden-1024x768.jpg"> 
+</div>
+
+
+<h3 class="title">The result</h3>
+<p>{{ result }}</p>
+
+<img src="https://cdn.shopify.com/s/files/1/1511/4266/products/sunnies_02_1024x1024.png?v=1575359889">
+
+Want to see more?
+<p class="button"> Full case on Behance</p>
+
+Other projects
+
+{%- for post in site.posts limit:2 -%}
+    {% assign curr = page.url %}
+    {% if curr == post.permalink %}
+        curr = {{ curr }}
+        post-permalink = {{ post.permalink }}
+        {% continue %}
+   {%  else %} 
+        {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}

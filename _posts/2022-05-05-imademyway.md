@@ -9,3 +9,5 @@ sumup: Virtual Journey
 ---
 
 {%- include card.html content1="gaja-a-fugir.webm" -%}
+
+{% include template.html %}
