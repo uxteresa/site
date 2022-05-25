@@ -11,8 +11,6 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
-paginate: 2
-
 baseurl: "/site" # the subpath of your site
 
 linkedin: 3a-fernandes/
@@ -68,4 +66,3 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
- - jekyll-paginate
