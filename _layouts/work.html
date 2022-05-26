@@ -3,16 +3,14 @@ layout: default
 ---
 <div class="projects">
 
-    {% for post in site.posts %}
-        {{ post.excerpt }}
-    {% endfor %}
+{%- for post in site.posts -%}
+    {%- include card.html content1=post.image url=post.url title=post.title sumup=post.sumup -%}
+{%- endfor -%}
 
 </div>
 
 Personal Projects
 
-<div class="personal">
-    {% for post in site.personal %}
-        {{ post.excerpt }}
-    {% endfor %}
-</div>
+{%- for proj in site.personal-%}
+    {%- include card.html content1=post.image url=post.url title=post.title sumup=post.sumup -%}
+{%- endfor -%}

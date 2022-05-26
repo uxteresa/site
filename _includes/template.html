@@ -23,16 +23,3 @@ Want to see more?
 <p class="button"> Full case on Behance</p>
 
 Other projects
-
-{%- for post in site.posts limit:2 -%}
-    {% assign curr = page.url %}
-    {% if curr == post.permalink %}
-        curr = {{ curr }}
-        post-permalink = {{ post.permalink }}
-        {% continue %}
-   {%  else %} 
-        {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-        {%- endif -%}
-    {%- endif -%}
-{%- endfor -%}

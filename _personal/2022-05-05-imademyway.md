@@ -5,7 +5,6 @@ permalink: /i-made-my-way-once-again/
 tagline: A journey through the paths of memmory
 role: Narratvie, Ux design, Ui design
 image: gaja-a-fugir.webm
-thumbnail: cat1.jpeg
 sumup: Virtual Journey
 ---
 
