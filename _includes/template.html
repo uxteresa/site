@@ -1,23 +1,26 @@
-<h3 class="title">The challenge</h3>
-<p>{{ challenge }}</p>
-
-
-<h3 class="title">The process</h3>
-<p>{{ process }}</p>
-
-<h4>Major insights</h4>
-<p class="intro">{{ page.mj1 }} {{ page.mj2 }} {{ page.mj3 }}</p>
-
-<div>
-    <p>{{ ins }}</p>
-    <img src="https://www.hdwallpaper.nu/wp-content/uploads/2015/02/Funny-Cat-Hidden-1024x768.jpg"> 
+<div class="post-parag">
+    <h3 class="title">The challenge</h3>
+    <p>{{ challenge }}</p>
 </div>
 
+<div class="post-parag">
+    <h3 class="title">The process</h3>
 
-<h3 class="title">The result</h3>
-<p>{{ result }}</p>
+    <h4>Major insights</h4>
+    <p class="intro">{{ page.mj1 }} {{ page.mj2 }} {{ page.mj3 }}</p>
+    
+    <div class="post-process">
+        <p>{{ ins }}</p>
+        <img class="post-proc" src="{{ site.baseurl }}/img/{{ page.thumbnail }}" width="100px"> 
+    </div>
+</div>
 
-<img src="https://cdn.shopify.com/s/files/1/1511/4266/products/sunnies_02_1024x1024.png?v=1575359889">
+<div class="post-parag">
+    <h3 class="title">The result</h3>
+    <p>{{ result }}</p>
+
+    <img class="post-result" src="{{ site.baseurl }}/img/{{ page.thumbnail }}">
+</div>
 
 Want to see more?
 <p class="button"> Full case on Behance</p>

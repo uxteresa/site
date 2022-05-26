@@ -574,6 +574,22 @@ figure img {
   background-color: var(--dark-purple);
   border-radius: 8px;
 }
+
+/*Style post images*/
+
+.post-thumb, .post-proc, .post-result {
+  width: 100vw;
+}
+
+//Style post paragraphs
+.post-parag {
+  margin: var(--padd-main-v) var(--padd-main-h);
+}
+
+.post-parag p {
+  max-width: 90vw;
+}
+
  
 /* 
 .
@@ -722,6 +738,31 @@ figure img {
     padding: 30px 0px 30px 0px;
     color: var(--white);
     background-color: var(--dark-purple);
+  }
+
+  .post-proc {
+    width: 30vw;
+  }
+
+  .post-parag {
+    margin: var(--padd-main-v) calc(2 * var(--margin-nav));
+  }
+
+  .post-parag p {
+    max-width: 70vw;
+  }
+
+  .post-parag >* {
+    margin-left: 0;
+  }
+
+  .post-process {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .post-process p {
+    margin: var(--padd-main-v) 0 0 0;
   }
 }
 
@@ -972,5 +1013,9 @@ figure img {
     margin: 0;
     padding: 30px;
   }
-   
+
+  .post-parag p {
+    max-width: 50vw;
+  }
+  
 }
