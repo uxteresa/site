@@ -22,10 +22,12 @@ layout: default
   </div>
 
   <div class="post-cont more">
-    <a href="{{ page.link-ext }}"><p class="btn-secondary big">Full case study</p></a>
+    <a href="{{ page.link-ext }}"><p class="btn-secondary">Full case study</p></a>
 
-    <h4>Want to see more?</h4>
-    Other projects
+    <div class="more">
+      <p class="about-header intro">Want to see more?</p>
+      <a href="{{ site.baseurl}}/work/"><p class="btn-primary">Back to Work</p></a>
+    </div>
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

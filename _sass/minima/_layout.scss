@@ -259,7 +259,7 @@ svg {
 /* -------- BACKGROUND -------- */
 
 #background > .about-container {
-  margin-bottom: calc(2 * var(--padd-main-v));
+  margin-bottom: 0;
 }
 
 .back-info h4 {
@@ -403,6 +403,17 @@ p.small {
   color: var(--grey);
 }
 
+.icons {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.icons li {
+  margin: 0 var(--padd-main-h);
+}
+
 .card p {
   color: var(--grey);
 }
@@ -431,6 +442,18 @@ a {
   text-align: center;
 }
 
+.contact p {
+  margin: 0 auto;
+  margin-bottom: var(--padd-main-v);
+}
+
+.contact p:not(.btn-primary) {
+  padding: 12vw;
+}
+
+.contact a {
+  margin: 0 auto;
+}
 
 figure {
   margin: 0;
@@ -453,6 +476,10 @@ figure {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.more a {
+  margin: var(--padd-main-h) 0;
 }
 
 .post-header {
@@ -527,20 +554,22 @@ p .post-result {
   padding: var(--padd-main-h);
 }
 
-.about-header .intro{
+.about-header .intro, .more .intro {
   margin-left: 0px;
   font-size: 3rem;
   text-align: center;
 }
 
 #about-pg .about-container {
-  margin-bottom: calc(2 * var(--padd-main-v));
+  margin-bottom: 0;
 }
 
 .about-img {
   height: fit-content;
   width: 100%;
   margin: 0 0 var(--margin-nav) 0;
+  border-radius: 15px;
+  border: solid 4px var(--pink);
 }
 /* 
 .
@@ -614,6 +643,7 @@ p .post-result {
       
   #background > .about-container {
       max-width: 580px;
+      margin-bottom: calc(2 * var(--padd-main-v));
   }
 
 
@@ -705,6 +735,10 @@ p .post-result {
     margin-bottom: var(--padd-main-v);
   }
 
+
+  .contact p:not(.btn-primary) {
+    padding: 0;
+  }
 }
 
 /* 
@@ -933,6 +967,10 @@ p .post-result {
   #about-pg > .about-container {
     max-width: 80%;
     padding-left: 0;
+  }
+
+  #about-pg .about-container {
+    margin-bottom: calc(2 * var(--padd-main-v));
   }
 
   .about-fig {
