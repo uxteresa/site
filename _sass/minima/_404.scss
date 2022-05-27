@@ -1,0 +1,30 @@
+.div404 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    position: absolute;
+    flex-direction: column;    
+    gap: 30px;
+    padding-bottom: calc(2 * var(--padd-main-v));
+  }
+
+  .div404>* {
+   margin: 0 auto;
+  }
+
+  .div404 img {
+   width: 100%;
+  }
+
+    /* TABLET................................... */
+@media only screen and (min-width: 560px) { 
+  .div404 img {
+   width: 60%;
+  }
+
+  /* DESKTOP................................... */
+@media only screen and (min-width: 1020px) { 
+  .div404 img {
+   width: 40%;
+  }
+}

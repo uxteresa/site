@@ -99,6 +99,8 @@ svg {
 
 .intro {
   width: 100%;
+  margin: 0;
+  padding: 0;
   font-size: 3.4rem;
   line-height: 5rem;
   font-family: 'Zen Dots', 'Verdana', cursive;
@@ -222,7 +224,6 @@ svg {
   margin: 0 auto;
 }
 
-
 .homepage {
   padding-right: none;
   
@@ -241,6 +242,10 @@ svg {
 
 
 /* -------- BACKGROUND -------- */
+
+#background > .about-container {
+  margin-bottom: calc(2 * var(--padd-main-v));
+}
 
 .back-info h4 {
   margin-bottom: 10px;
@@ -384,22 +389,25 @@ a {
   height: max-content;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
+  margin: calc(3 * var(--margin-nav));
   margin: 0 0 var(--padd-main-v) 0;
   row-gap: var(--padd-main-h);
 }
 
-.contact h1, .contact p, .contact h3 {
-  padding: 20px;
+.contact .intro {
+  overflow: hidden;
   text-align: center;
+}
+
+.contact .intro, .contact p, .contact h3 {
+  padding: 20px;
+  width: fit-content;
+  margin-left: 20px;
 }
 
 
 figure {
   margin: 0;
-}
-
-figure img {
-  width: 100%;
 }
 
 
@@ -473,6 +481,29 @@ p .post-result {
 .post-process p {
   margin-bottom: var(--margin-nav);
 }
+
+
+// ABOUT
+
+.about-header {
+  padding: var(--padd-main-h);
+}
+
+.about-header .intro{
+  margin-left: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#about-pg .about-container {
+  margin-bottom: calc(2 * var(--padd-main-v));
+}
+
+.about-img {
+  height: fit-content;
+  width: 100%;
+  margin: 0 0 var(--margin-nav) 0;
+}
 /* 
 .
 .
@@ -536,10 +567,12 @@ p .post-result {
   .about-container {
       max-width: 580px;
       margin: 0 auto;
+  }
+
+  .homepage {
       padding-top: calc(2 * var(--padd-main-v));
       padding-bottom: calc(2 * var(--padd-main-v));
   }
-
       
   #background > .about-container {
       max-width: 580px;
@@ -554,10 +587,6 @@ p .post-result {
   }
   
 
-  .contact h1, .contact p, .contact h3 {
-    margin: 0 30vw 0 30vw;
-  }
-
   .tagline {
     font-size: 3.3rem;
     line-height: 4rem;
@@ -569,8 +598,14 @@ p .post-result {
     flex-direction: row;
   }
   
-  figcaption p{
-    font-size: 30px;
+  .contact {
+    margin: 0 calc(3 * var(--margin-nav));
+  }
+
+
+  .contact .intro, .contact p, .contact h3 {
+    padding: 0;
+    width: auto;
   }
   
   .post-header {
@@ -622,6 +657,26 @@ p .post-result {
   .post-parag .intro {
     font-size: 2.8rem;
     line-height: 3.2rem;
+  }
+
+  .about-header .intro{
+    text-align: center;
+  }
+
+  .about-fig {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: var(--padd-main-v);
+  }
+
+  .about-fig figcaption p{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--white);
   }
 }
 
@@ -712,7 +767,6 @@ p .post-result {
       max-width: 100vw;
       margin: 0 auto;
       padding-top: calc(1.5 * var(--padd-main-v));
-      padding-bottom: calc(2 * var(--padd-main-v));
       padding-left: calc(2.3 * var(--padd-main-v));
   }
   
@@ -722,7 +776,6 @@ p .post-result {
 
   #background > .about-container { 
       max-width: 100vw;
-      padding-top: calc(2.5 * var(--padd-main-v));
       padding-right: calc(2 * var(--padd-main-v));
   }
 
@@ -781,7 +834,6 @@ p .post-result {
       font-size: 2rem;
       margin-bottom: 50px;
   }
- 
   
   .overview {
     flex-direction: row;
@@ -831,4 +883,19 @@ p .post-result {
     margin: 0 auto;
   }
   
+
+  #about-pg > .about-container {
+    max-width: 80%;
+    padding-left: 0;
+  }
+
+  .about-fig {
+    flex-direction: row;
+  }
+
+  .about-img {
+    width: 30%;
+    margin: 0 0 0 20px;
+  }
+
 }
