@@ -17,8 +17,15 @@ layout: default
   <img class="post-thumb" src="{{ site.baseurl }}/img/{{ page.img-thumb }}">
   
 
-  <div class="post-cont" style ="width:100vw">
+  <div class="post-cont">
     {{ content }}
+  </div>
+
+  <div class="post-cont more">
+    <a href="{{ page.link-ext }}"><p class="btn-secondary big">Full case study</p></a>
+
+    <h4>Want to see more?</h4>
+    Other projects
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

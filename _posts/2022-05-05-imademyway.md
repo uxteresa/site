@@ -14,6 +14,7 @@ img-res: cat1.jpeg
 mj1: insightful insight
 mj2: insightful insight
 mj3: insightful insight
+link-ext: https://imademywayonceagai.wixsite.com/proj/production
 ---
 
 {% include template.html %}

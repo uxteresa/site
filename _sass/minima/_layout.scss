@@ -26,8 +26,8 @@
   background: var(--pink);
 }
 
-.button {
-  width:min-content;
+.btn-primary {
+  width: fit-content;
   color: var(--white);
   -webkit-box-shadow: 0px 20px 0px 0px var(--pink);
           box-shadow: 0px 20px 0px 0px var(--pink);
@@ -38,11 +38,25 @@
 }
 
 
-.button:hover {
+.btn-primary:hover {
   -webkit-box-shadow: 0px 0px 0px 0px var(--pink);
   box-shadow: 0px 0px 0px 10px var(--dark-purple);
   border-color: var(--purple);
   border-width: 6px;
+}
+
+
+.btn-secondary {
+  width: fit-content;
+  color: var(--white);
+  border-bottom: solid 4px var(--white);
+  padding: 20px 0;
+  transition: 0.1s ease-out;
+}
+
+.btn-secondary:hover {
+  border-bottom: solid 4px var(--white);
+  padding: 10px 0;
 }
 
 
@@ -426,6 +440,21 @@ figure {
 // POSTS
 
 /* Style post header */
+
+.post-cont {
+  width: 100vw;
+  height: max-content;
+}
+
+.more {
+  height: fit-content;
+  padding: var(--padd-main-v) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .post-header {
   padding: var(--padd-main-v) var(--padd-main-h);
 }
