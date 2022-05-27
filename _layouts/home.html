@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 
   <div class="headline">
-    <p class="intro slide"> Product Designer > Based in Portugal </p>
+    <h5 class="intro slide"> Product Designer > Based in Portugal </h5>
   </div>
   
 
@@ -24,7 +24,7 @@ layout: default
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+      <h5 class="post-list-heading">{{ page.list_title }}</h5>
     {%- endif -%}
     <div id="work" class="work">
 
@@ -71,9 +71,9 @@ layout: default
 
   <div id="about" class="about">
       <div class="about-container homepage">
-          <h3 class="title">About Me</h3>
+          <h5 class="title">About Me</h5>
           <p class="big">More than just a designer, I'm a curious individual intrigued by people, how they work, and what makes them tick. </p>
-          <p>I approach the design process with a learning mindset, seeking to challenge our assumptions and better understand users' needs in order to create robust, meaningful experiences.</p>
+          <p class="small">I approach the design process with a learning mindset, seeking to challenge our assumptions and better understand users' needs in order to create robust, meaningful experiences.</p>
       </div>
   </div>
 
@@ -86,12 +86,22 @@ layout: default
   </div>
 
 
-  <div id="about" class="about">
+  <div class="approach">
     <div class="about-container">
-      <h3 class="title">my process</h3>
-    </div>
+      <div>
+        <h5 class="title">my approach</h5>
+      </div>
+      
+        <div>
+          {% for step in site.steps %}
+            <h5 class="subtitle">{{ step.title }}</h5>
+            <p class="small">{{step.content}}</p>
+          {% endfor %}
+        </div>
+      </div>
   </div>
 </div>
+
 
 
 </div>

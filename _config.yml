@@ -66,3 +66,13 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+
+collections:
+  steps:
+    output: true
+    permalink: /steps/:path
+  play:
+    output: true
+    permalink: /play/
+

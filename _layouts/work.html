@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+
+<div class="about-header">
+    <h1 class="intro">{{ page.title | escape | downcase}}</h1>
+</div>
+
 <div class="projects">
 
 {%- for post in site.posts -%}
@@ -8,9 +13,3 @@ layout: default
 {%- endfor -%}
 
 </div>
-
-Personal Projects
-
-{%- for proj in site.personal-%}
-    {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
-{%- endfor -%}

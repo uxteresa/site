@@ -281,6 +281,23 @@ svg {
 }
 
 
+/* APPROACH */
+
+.approach .about-container {
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: var(--margin-nav);
+}
+
+.approach p {
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.approach .about-container div {
+  width: max-content;
+  margin-right: 17vw;
+}
 
 
 /* Style logo*/
@@ -300,10 +317,12 @@ h1 {
 
 /* Style project titles */
 .title {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  height: fit-content;
+  width: max-content;
   color: black;
+  font-weight: 600;
   background-color: var(--white);
   padding: 10px 15px;
   margin: 0px 20px 40px 20px; 
@@ -311,6 +330,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.subtitle {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
 /* Style tagline (on post)*/
 
 .tagline {
@@ -360,7 +383,7 @@ p, p.big {
 }
 
 p {
-  color: var(--grey);
+  color: var(--white);
   font-size: 1.3rem;
   line-height: 2rem;
 }
@@ -370,6 +393,14 @@ p.big {
   line-height: 2.8rem;
   margin-bottom: 35px;
   color: var(--white);
+}
+
+p.small {
+  color: var(--grey);
+}
+
+.card p {
+  color: var(--grey);
 }
 
 a {
@@ -439,9 +470,6 @@ figure {
 
 //Style post text
 
-article p {
-  color: var(--white);
-}
 
 .post-proc p {
   margin: 0 0 40px 0;
@@ -482,6 +510,7 @@ p .post-result {
 
 .about-header .intro{
   margin-left: 0px;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -657,11 +686,6 @@ p .post-result {
     margin-bottom: var(--padd-main-v);
   }
 
-  .about-fig figcaption p{
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    color: var(--white);
-  }
 }
 
 /* 
@@ -805,10 +829,6 @@ p .post-result {
     font-size: 2rem;
   }
 
-  .about p {
-      color: var(--white);
-  }
-  
   p, p.big {
       padding-right: 0;
   }
@@ -868,6 +888,9 @@ p .post-result {
     margin: 0 auto;
   }
   
+  figcaption {
+    width: 50%;
+  }
 
   #about-pg > .about-container {
     max-width: 80%;
@@ -878,9 +901,13 @@ p .post-result {
     flex-direction: row;
   }
 
+  .about-fig {
+    align-items: center;
+  }
+
   .about-img {
-    width: 30%;
-    margin: 0 0 0 20px;
+    width: 40%;
+    margin: 0 var(--margin-nav) 0 20px;
   }
 
 }
