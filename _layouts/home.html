@@ -31,20 +31,20 @@ layout: default
   
       <div class="col1">
         {%- for post in posts limit:2 -%}
-              {%- include card.html content1=post.image url=post.url title=post.title sumup=post.sumup -%}
+              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
         {%- endfor -%}
       </div>
 
 
       <div class="col2">
         {%- for post in posts offset: 2 limit:2 -%}
-              {%- include card.html content1=post.image url=post.url title=post.title sumup=post.sumup -%}
+              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
         {%- endfor -%}
       </div>
 
       <div class="col3">
         {%- for post in posts offset: 4 limit:2 -%}
-              {%- include card.html content1=post.image url=post.url title=post.title sumup=post.sumup -%}
+              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
         {%- endfor -%}
       </div>
     </div>
@@ -79,11 +79,9 @@ layout: default
 
   <div id="scrollCont" class="skills intro" style="overflow: hidden;">
     <ul class="scrolltext">
-        <li>UX design </li>
-        <li>UI design</li>
-        <li>UX Research</li>
-        <li>wireframing</li>
-        <li>prototyping</li>
+      {%- for skill in site.data.skills -%}
+        <li> {{ skill.name }} </li>
+      {%- endfor -%}
     </ul>
   </div>
 

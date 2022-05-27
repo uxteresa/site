@@ -4,7 +4,7 @@ layout: default
 <div class="projects">
 
 {%- for post in site.posts -%}
-    {%- include card.html content1=post.image url=post.url title=post.title sumup=post.sumup -%}
+    {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
 {%- endfor -%}
 
 </div>
@@ -12,5 +12,5 @@ layout: default
 Personal Projects
 
 {%- for proj in site.personal-%}
-    {%- include card.html content1=post.image url=post.url title=post.title sumup=post.sumup -%}
+    {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
 {%- endfor -%}
