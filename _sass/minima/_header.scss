@@ -51,16 +51,13 @@
     padding: 14px 30px;
     font-size: 1.6rem;
     text-decoration: none;
-    border-bottom: 3px dashed transparent;
+    border-bottom: 3px solid transparent;
   }
   
   nav ul li a:hover {
-      border-bottom: 3px dashed var(--white);
-    //   background-color: var(--pink);
-    //   border-radius: 5px;
+      border-bottom: 3px solid var(--white);
       background-clip: padding-box;
       transition: border-bottom 0.5s;
-    // background-position: 0% 100%;
   }
   
   nav a.logo {
