@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: post
 title:  Beau
 permalink: /b/
 sumup: Website Feature
 tagline: Last project to fill up my portfolio
 role: Research, Ux design
+img-card: Beau5.webm
 img-thumb: cat1.jpeg
 img-proc: cat1.jpeg
 img-res: cat1.jpeg
