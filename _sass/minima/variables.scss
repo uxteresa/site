@@ -1,13 +1,15 @@
-$purple: rgb(79, 28, 223);
-$lite-purple: rgb(209, 194, 250);
-$purples: 79, 28, 223;
-$dark-purple: rgb(34, 1, 125);
-$blue: rgb(23, 150, 235);
-$pink: rgb(205, 57, 245);
-$black: rgb(38, 30, 46);
-$white: rgb(255, 255, 255);
-$grey: rgb(205, 197, 226);
-$dark-grey: rgb(141, 131, 169);
-$margin-nav: 40px;
-$padd-main-h: 20px;
-$padd-main-v: 60px;
+:root {
+    --purple: rgb(79, 28, 223);
+    --lite-purple: rgb(209, 194, 250);
+    --purples: 79, 28, 223;
+    --dark-purple: rgb(34, 1, 125);
+    --blue: rgb(23, 150, 235);
+    --pink: rgb(205, 57, 245);
+    --black: rgb(38, 30, 46);
+    --white: rgb(255, 255, 255);
+    --grey: rgb(205, 197, 226);
+    --dark-grey: rgb(141, 131, 169);
+    --margin-nav: 40px;
+    --padd-main-h: 20px;
+    --padd-main-v: 60px;
+  }
