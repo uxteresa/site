@@ -209,7 +209,6 @@ svg {
 .thumbnail:hover {
   margin: 20px 0px 20px 0px;
   -webkit-box-shadow: 0px 0px 0px 0px var(--pink);
-  // box-shadow: 15px 15px 0px 0px var(--dark-purple);
   box-shadow: 0px 0px 0px 10px var(--dark-purple);
   border-color: var(--purple);
   border-width: 6px;
@@ -229,14 +228,8 @@ svg {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  // padding-top: var(--padd-main-v);
 }
 
-// //exception in the "about" page
-// #background {
-//   padding-top: calc(2* var(--padd-main-v));
-//   padding-bottom: calc(2* var(--padd-main-v));
-// }
 
 /* Center container of content */
 .about-container {
@@ -252,11 +245,6 @@ svg {
   padding-right: none;
 }
 
-// .homepage {
-//   padding-right: none;
-  
-// }
-
 .back-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,12 +258,6 @@ svg {
 
 
 /* -------- BACKGROUND -------- */
-
-// #background > .about-container {
-//   margin-bottom: 0;
-//   padding-top: 0;
-//   padding-bottom: 0;
-// }
 
 .back-info h4 {
   margin-bottom: 10px;
@@ -691,11 +673,6 @@ ul {
       padding-bottom: calc(2 * var(--padd-main-v));
   }
 
-  // #background {
-  //   padding-top: var(--padd-main-v);
-  //   padding-bottom: var(--padd-main-v);
-  // }
-
   #bio {
     padding-top: var(--padd-main-v);
     padding-left: 0;
@@ -703,21 +680,9 @@ ul {
     padding-bottom: 0;
   }
 
-  // .homepage {
-  //     padding-top: calc(2 * var(--padd-main-v));
-  //     padding-bottom: calc(2 * var(--padd-main-v));
-  // }
-      
   #background > .about-container {
       max-width: 580px;
-      // margin-bottom: calc(2 * var(--padd-main-v));
-      // margin-bottom: var(--padd-main-v);
   }
-
-  // #back-info {
-  //   padding-top: calc(2.7 * var(--padd-main-v));
-  //   padding-bottom: calc(2.7 * var(--padd-main-v));
-  // }
 
   .skills ul, .skills li {
     margin: 0;
@@ -978,11 +943,6 @@ ul {
   .approach p {
     font-weight: 500;
     margin-bottom: 35px;
-  }
-
-  .approach .about-container div {
-    // width: max-content;
-    // padding-right: 17vw;
   }
 
 
