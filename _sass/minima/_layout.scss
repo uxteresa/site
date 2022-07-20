@@ -229,7 +229,7 @@ svg {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding-bottom: calc(2* var(--padd-main-v));
+  padding-top: var(--padd-main-v);
 }
 
 
@@ -238,7 +238,8 @@ svg {
   max-width: 100vw;
   margin: 0 auto;
   // padding: var(--margin-nav) var(--padd-main-h);
-  padding: 0 var(--padd-main-h);
+  // padding: 0 var(--padd-main-h);
+  padding: var(--padd-main-h);
 }
 
 .homepage {
@@ -649,13 +650,18 @@ ul {
     height: 220px;
   }
 
+  //Reset spacing from mobile version
   .about {
+    padding-top: 0;
     padding-bottom: 0;
   }
+
 
   .about-container {
       max-width: 580px;
       margin: 0 auto;
+      padding-top: calc(2.3 * var(--padd-main-v));
+      padding-bottom: calc(1.5 * var(--padd-main-v));
   }
 
   .homepage {
@@ -800,7 +806,7 @@ ul {
 */
 
 /* DESKTOP................................... */
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1032px) {
 
   .intro {
     font-size: 5.3rem;
