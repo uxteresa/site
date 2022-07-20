@@ -70,7 +70,7 @@ layout: default
   {%- endif -%}
 
   <div id="about" class="about">
-      <div class="about-container homepage">
+      <div class="about-container homepage" id="about-homepage">
           <h5 class="title">About Me</h5>
           <p class="big">More than just a designer, I'm a curious individual intrigued by people, how they work, and what makes them tick. </p>
           <p class="small">I approach the design process with a learning mindset, seeking to challenge our assumptions and better understand users' needs in order to create robust, meaningful experiences.</p>
@@ -99,6 +99,11 @@ layout: default
           {% endfor %}
         </div>
       </div>
+  </div>
+
+  <div class="more">
+    <p class="about-header intro">Get to know me!</p>
+    <a href="{{ site.baseurl}}/about/"><p class="btn-primary">About me</p></a>
   </div>
 </div>
 

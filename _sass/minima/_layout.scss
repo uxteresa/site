@@ -237,7 +237,8 @@ svg {
 .about-container {
   max-width: 100vw;
   margin: 0 auto;
-  padding: var(--margin-nav) var(--padd-main-h);
+  // padding: var(--margin-nav) var(--padd-main-h);
+  padding: 0 var(--padd-main-h);
 }
 
 .homepage {
@@ -667,7 +668,7 @@ ul {
       margin-bottom: calc(2 * var(--padd-main-v));
   }
 
-  .skills ul {
+  .skills ul, .skills li {
     margin: 0;
     padding: 0;
   }
@@ -858,10 +859,17 @@ ul {
   .about-container {
       max-width: 100vw;
       margin: 0 auto;
-      padding-top: calc(var(--padd-main-v));
+      padding-top: calc(2.3 * var(--padd-main-v)); //para que o espaçamento entre os projetos e o about sejam 4 quadrados
+      padding-bottom: calc(1.5 * var(--padd-main-v));
       padding-left: calc(2.3 * var(--padd-main-v));
+      padding-right: 37vw;
   }
   
+  #about-homepage {
+    padding-top: calc(1.5 * var(--padd-main-v)); //excecao
+    padding-bottom: calc(2.3 * var(--padd-main-v)); //excecao
+  }
+
   .homepage {
     padding-right: 37vw;
   }
@@ -884,7 +892,7 @@ ul {
   }
 
   .skills li {
-      padding: 15px 25px;
+      padding: 0 25px;
   }
 
   .back-info-container {
@@ -913,7 +921,7 @@ ul {
 
   .approach .about-container {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-right: var(--margin-nav);
   }
 
@@ -923,8 +931,8 @@ ul {
   }
 
   .approach .about-container div {
-    width: max-content;
-    margin-right: 17vw;
+    // width: max-content;
+    // padding-right: 17vw;
   }
 
 
