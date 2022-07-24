@@ -120,7 +120,7 @@ layout: default
 
   if (window.scrollY > container.getBoundingClientRect().top) {
     console.log("container: ", container.getBoundingClientRect().top);
-    text.style.transform = `translateX(window.innerWidth - ${window.scrollY - container.getBoundingClientRect().top}px)`;
+    text.style.transform = `translateX( ${window.innerWidth - (window.scrollY - container.getBoundingClientRect().top)}px)`;
    }
   });
 </script>
