@@ -124,7 +124,26 @@ layout: default
     text.style.transform = `translateX( ${window.innerWidth - 200 - (window.scrollY - container.getBoundingClientRect().top * 1.2)}px)`;
    }
 
-   else if (window.innerWidth < 1032 && about.getBoundingClientRect().top < -250) {
+   else if (window.innerWidth < 1032 && window.innerWidth > 560 && about.getBoundingClientRect().top < 400) {
+
+    if (about.getBoundingClientRect().top < 400) {
+      skills[0].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < 350) {
+      skills[1].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < 300) {
+      skills[2].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < 250) {
+      skills[3].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < 200) {
+      skills[4].style.display = "flex";
+    }
+  }
+
+   else if (window.innerWidth < 560 && about.getBoundingClientRect().top < -250) {
 
     if (about.getBoundingClientRect().top < -150) {
       skills[0].style.display = "flex";
