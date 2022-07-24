@@ -115,12 +115,25 @@ layout: default
   
   const text = document.querySelector(".scrolltext");
   const container = document.querySelector("#scrollCont");
+  const skills = document.querySelectorAll(".skills ul li");
 
   window.addEventListener("scroll", () => {
 
-  if (window.scrollY > container.getBoundingClientRect().top) {
+  if (window.innerWidth >= 1032 && window.scrollY > container.getBoundingClientRect().top) {
     console.log("container: ", container.getBoundingClientRect().top);
     text.style.transform = `translateX( ${window.innerWidth - (window.scrollY - container.getBoundingClientRect().top)}px)`;
    }
+
+   else if (window.innerWidth < 1032 && window.scrollY > container.getBoundingClientRect().bottom) {
+    let percValue = 100;
+
+    while (percValue > 0) {
+      percValue = percValue - 1;
+      skills[0].style.transform = `translateX( ${percValue}%)`
+    }
+  }
+
   });
+
+
 </script>

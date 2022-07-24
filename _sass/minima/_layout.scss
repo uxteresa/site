@@ -136,7 +136,9 @@ svg {
 }
 
 .intro ul {
-  display: inline;
+  // display: inline;
+  display: flex;
+  flex-direction: column;
   padding-left: 0;
 }
 
@@ -276,11 +278,11 @@ svg {
 /* ------- SKILLS ------ */
 
 .skills ul {
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0px 30px var(--padd-main-v);
   list-style-type: none;
   text-transform: uppercase;
   font-size: 3.5rem;
-  text-align: center;
+  text-align: left;
   margin-left: 0px;
   color: var(--white);
   white-space: nowrap;
@@ -683,8 +685,11 @@ ul {
       max-width: 580px;
   }
 
-  .skills ul, .skills li {
+  .skills ul {
     margin: 0;
+  }
+
+  .skills li {
     padding: 0;
   }
 
@@ -897,6 +902,12 @@ ul {
       margin-right: 20px;
   }
 
+
+  .intro ul {
+    flex-direction: row;
+  }
+  
+
   .skills ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -904,6 +915,7 @@ ul {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   }
+
 
   .skills li {
       padding: 0 25px;
