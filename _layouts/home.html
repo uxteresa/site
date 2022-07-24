@@ -113,16 +113,10 @@ layout: default
 
 <script>
   
-  const nav = document.querySelector("nav");
   const text = document.querySelector(".scrolltext");
   const container = document.querySelector("#scrollCont");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY !== 0) {
-      nav.classList.add("opaque");
-    } else {
-      nav.classList.remove("opaque");
-    }
 
   if (window.scrollY > container.getBoundingClientRect().top) {
     console.log("container: ", container.getBoundingClientRect().top);
