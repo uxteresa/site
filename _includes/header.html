@@ -40,8 +40,6 @@
 <script>
 
   const nav = document.querySelector("nav");
-  const text = document.querySelector(".scrolltext");
-  const container = document.querySelector("#scrollCont");
 
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
   function myFunction() {
@@ -63,11 +61,6 @@
     } else {
       nav.classList.remove("opaque");
     }
-
-  if (window.scrollY > container.getBoundingClientRect().top) {
-    console.log("container: ", container.getBoundingClientRect().top);
-    text.style.transform = `translateX(window.innerWidth - ${window.scrollY - container.getBoundingClientRect().top}px)`;
-   }
   });
 
   </script>
