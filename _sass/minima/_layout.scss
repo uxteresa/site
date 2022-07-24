@@ -287,6 +287,7 @@ svg {
 /* ------- SKILLS ------ */
 
 .skills ul {
+  min-height: 100px;
   padding: 30px 0px 30px var(--padd-main-v);
   list-style-type: none;
   text-transform: uppercase;
@@ -301,7 +302,7 @@ svg {
 /* Style horizontal word spacing (mobile) */
 .skills li {
   display: none;
-  animation: slideUp 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: slideUp 0.1s ease-out forwards;
   padding-bottom: 20px;
 }
 
@@ -701,6 +702,7 @@ ul {
   }
 
   .skills li {
+    display: none;
     padding: 0;
   }
 

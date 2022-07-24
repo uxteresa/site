@@ -116,23 +116,30 @@ layout: default
   const text = document.querySelector(".scrolltext");
   const container = document.querySelector("#scrollCont");
   const skills = document.querySelectorAll(".skills ul li");
+  const about = document.querySelector("#about")
 
   window.addEventListener("scroll", () => {
 
   if (window.innerWidth >= 1032 && window.scrollY > container.getBoundingClientRect().top) {
-    console.log("container: ", container.getBoundingClientRect().top);
-    text.style.transform = `translateX( ${window.innerWidth - (window.scrollY - container.getBoundingClientRect().top)}px)`;
+    text.style.transform = `translateX( ${window.innerWidth - 200 - (window.scrollY - container.getBoundingClientRect().top * 1.2)}px)`;
    }
 
-   else if (window.innerWidth < 1032 && window.scrollY > skills[0].getBoundingClientRect().top) {
+   else if (window.innerWidth < 1032 && about.getBoundingClientRect().top < -250) {
 
-    console.log("page: ", window.pageYOffset)
-    console.log("scrollY: ", scrollY)
-    console.log("skills: ", skills[0].getBoundingClientRect())
-
-    if (scrollY > skills[0].getBoundingClientRect().bottom) {
-      console.log("testkey")
+    if (about.getBoundingClientRect().top < -150) {
       skills[0].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < -250) {
+      skills[1].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < -350) {
+      skills[2].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < -450) {
+      skills[3].style.display = "flex";
+    }
+    if (about.getBoundingClientRect().top < -550) {
+      skills[4].style.display = "flex";
     }
 
   }
