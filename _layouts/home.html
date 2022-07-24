@@ -124,13 +124,17 @@ layout: default
     text.style.transform = `translateX( ${window.innerWidth - (window.scrollY - container.getBoundingClientRect().top)}px)`;
    }
 
-   else if (window.innerWidth < 1032 && window.scrollY > container.getBoundingClientRect().bottom) {
-    let percValue = 100;
+   else if (window.innerWidth < 1032 && window.scrollY > skills[0].getBoundingClientRect().top) {
 
-    while (percValue > 0) {
-      percValue = percValue - 1;
-      skills[0].style.transform = `translateX( ${percValue}%)`
+    console.log("page: ", window.pageYOffset)
+    console.log("scrollY: ", scrollY)
+    console.log("skills: ", skills[0].getBoundingClientRect())
+
+    if (scrollY > skills[0].getBoundingClientRect().bottom) {
+      console.log("testkey")
+      skills[0].style.display = "flex";
     }
+
   }
 
   });
