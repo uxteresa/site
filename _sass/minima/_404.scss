@@ -20,6 +20,10 @@
     margin-bottom: var(--padd-main-v);
 }
 
+#phrase1 {
+    padding: 0 var(--padd-main-v);
+}
+
 
 /* TABLET ................................ */
 @media only screen and (min-width: 560px) {
@@ -27,6 +31,11 @@
     .div404 img {
         width: 60%;
     }
+
+    #phrase1 {
+        padding: 0;
+    }
+
   }
 /* DESKTOP ................................ */
 @media only screen and (min-width: 1200px) {
