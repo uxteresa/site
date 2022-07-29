@@ -102,7 +102,7 @@ layout: default
   </div>
 
   <div class="more">
-    <p class="about-header intro">Curious? :)</p>
+    <p class="about-header intro">Curious for more?</p>
     <a href="{{ site.baseurl}}/about/"><p class="btn-primary">Get to know me</p></a>
   </div>
 </div>
@@ -120,10 +120,12 @@ layout: default
 
   window.addEventListener("scroll", () => {
 
+  // DESKTOP
   if (window.innerWidth >= 1032 && window.scrollY > container.getBoundingClientRect().top) {
     text.style.transform = `translateX( ${window.innerWidth - (window.scrollY - container.getBoundingClientRect().top * 1.2)}px)`;
    }
 
+  //  TABLET
    else if (window.innerWidth < 1032 && window.innerWidth > 560 && about.getBoundingClientRect().top < 400) {
 
     if (about.getBoundingClientRect().top < 400) {
@@ -143,6 +145,7 @@ layout: default
     }
   }
 
+  // MOBILE
    else if (window.innerWidth < 560 && about.getBoundingClientRect().top < -250) {
 
     if (about.getBoundingClientRect().top < -150) {
