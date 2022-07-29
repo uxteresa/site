@@ -667,6 +667,9 @@ ul {
               
   }
 
+  .about-header .intro, .more .intro, .skills ul {
+    font-size: 2.7rem;
+  }
   .thumbnail:hover {
       margin: 20px -20px 20px 0px;
   }
@@ -680,7 +683,6 @@ ul {
     padding-top: 0;
     padding-bottom: 0;
   }
-
 
   .about-container {
       max-width: 580px;
@@ -705,8 +707,8 @@ ul {
     max-width: 580px;
     margin: 0 auto;
     padding: 0 0 0 32px;
-    font-size: 2.5rem;
-    line-height: 5rem;
+    font-size: 2.7rem;
+    line-height: 6rem;
   }
 
   .skills li {
@@ -795,7 +797,6 @@ ul {
 
   .about-header .intro{
     text-align: center;
-    font-size: 3rem;
     line-height: auto;
   }
 
