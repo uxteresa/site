@@ -642,7 +642,7 @@ ul {
 */
 
 /* TABLET ................................ */
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 540px) {
 
   .intro {
     font-size: 4.6rem;
@@ -650,7 +650,7 @@ ul {
 }
 
   .slide {
-    animation: marquee 12s linear 0s infinite;
+    animation: marquee 15s linear 0s infinite;
   }
 
   .col1, .col2, .col3 {
@@ -705,7 +705,7 @@ ul {
     max-width: 580px;
     margin: 0 auto;
     padding: 0 0 0 32px;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     line-height: 5rem;
   }
 
@@ -714,10 +714,7 @@ ul {
     padding: 0;
   }
 
-  .more:first-child {
-    line-break: strict;
-  }
-
+ 
   .projects, .personal {
     display: grid;
     column-gap: 40px;
