@@ -714,6 +714,10 @@ ul {
     padding: 0;
   }
 
+  .more:first-child {
+    line-break: strict;
+  }
+
   .projects, .personal {
     display: grid;
     column-gap: 40px;
