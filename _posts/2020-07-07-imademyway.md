@@ -2,6 +2,7 @@
 layout: post
 title: I made my way once again
 permalink: /i-made-my-way-once-again/
+alt: Mobile with Wuse app on lilac background. The device shows the navigation through the main app screens.
 sumup: Virtual Journey
 tagline: A journey through the paths of memmory
 role: Narratvie, Ux design, Ui design

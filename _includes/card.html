@@ -1,6 +1,6 @@
 <div class="card">
     <div class="thumbnail"><a href="{{ include.url | relative_url }}" target="_self">
-        <video autoplay="true" muted="true" loop="true" height="100%" width="100%" lang="pt" alt="Interplanetário App">
+        <video autoplay="true" muted="true" loop="true" height="100%" width="100%" lang="pt" alt="{{ include.alt | escape }}">
             <source src="{{ site.baseurl }}/img/{{ include.content1 }}"
                     type="video/webm">
         </video>

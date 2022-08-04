@@ -31,20 +31,20 @@ layout: default
   
       <div class="col1">
         {%- for post in posts limit:2 -%}
-              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
+              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt-%}
         {%- endfor -%}
       </div>
 
 
       <div class="col2">
         {%- for post in posts offset: 2 limit:2 -%}
-              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
+              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
       </div>
 
       <div class="col3">
         {%- for post in posts offset: 4 limit:2 -%}
-              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup -%}
+              {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
       </div>
     </div>

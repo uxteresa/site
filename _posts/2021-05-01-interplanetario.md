@@ -2,10 +2,11 @@
 layout: post
 title:  Interplanetário
 permalink: /interplanetário/
+alt: Mobile phone on violet blue background. The phone shows short walkthroughs of 4 games on the Interplanetario app.
 sumup: Mobile App
 tagline: Learning made interactive
 role: Research, Ux design, Game design, Ui design
-img-card: interplanetario.webm
+img-card: interplanetario2.webm
 img-thumb: cat1.jpeg
 img-proc: cat1.jpeg
 img-res: cat1.jpeg
