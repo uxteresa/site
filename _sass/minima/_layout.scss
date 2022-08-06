@@ -144,7 +144,7 @@ svg {
 
 @keyframes marquee {
     from {
-      transform: translateX(100%);
+      transform: translateX(70%);
     }
 
     to {
@@ -850,7 +850,7 @@ ul {
   }
 
   .slide {
-    animation: marquee 25s linear 0s infinite;
+    animation: marquee 22s linear 0s infinite;
   }
   
 
