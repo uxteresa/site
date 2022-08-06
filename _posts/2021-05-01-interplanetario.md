@@ -10,19 +10,20 @@ img-card: interplanetario2.webm
 img-thumb: cat1.jpeg
 img-proc: cat1.jpeg
 img-res: cat1.jpeg
-mj1: insight 1
-mj2: insight 2
-mj3: insight 3
+mj1: Too hard/too easy
+mj2: People fell asleep
+mj3: Games help
 link-ext: https://www.behance.net/gallery/117220493/Interplanetario-App
 ---
 
 
 {% capture challenge %}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum cursus lectus ut vulputate. Sed congue id leo nec placerat. Aliquam elementum quam at mi rhoncus gravida. Vestibulum lobortis vitae nisi ut vehicula. Vestibulum iaculis venenatis felis quis sollicitudin. Quisque suscipit, ipsum ut accumsan lacinia, magna enim pulvinar lacus, vel molestie magna urna in turpis. Nunc blandit risus eu cursus lacinia. Nulla ornare eros massa, ac aliquet nibh aliquam non.
+    The Lisbon Planetary has had its iconic dome projection exhibition for several decades. However, the old school projection became outdated and uninteresting for new audiences. Our job was to devise an idea that would modernize the Planetary and cultivate the public’s interest in chemistry, astronomy and physics subjects.
 {% endcapture %}                
 
 {% capture ins %}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum cursus lectus ut vulputate. Sed congue id leo nec placerat. Aliquam elementum quam at mi rhoncus gravida. Vestibulum lobortis vitae nisi ut vehicula. Vestibulum iaculis venenatis felis quis sollicitudin. Quisque suscipit, ipsum ut accumsan lacinia, magna enim pulvinar lacus, vel molestie magna urna in turpis. Nunc blandit risus eu cursus lacinia. Nulla ornare eros massa, ac aliquet nibh aliquam non.
+   With competitive analysis, we saw that similar spaces often feature digital or physical games to explain concepts, that visitors enjoyed and said helped them learn better. We also found in our surveys and interviews that visitants often come in groups and like to explore the space freely, so our experience needed to be flexible and active. This was also confirmed when we found out people actually fell asleep during the show, due to the dim lighting, recling chairs they were in and the explanation being uninteresting and inadequate for both audiences they wanted to target.
+
 {% endcapture %}
 
 
