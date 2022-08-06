@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 
   <div class="headline" data-aos="fade-in" data-aos-delay="100">
-    <h5 class="intro slide" data-aos="fade-in" data-aos-delay="500"> Product Designer > Based in Lisbon, Portugal </h5>
+    <h5 class="intro slide"> Product Designer > Based in Lisbon, Portugal </h5>
   </div>
   
 
@@ -29,20 +29,20 @@ layout: default
     <div id="work" class="work">
 
   
-      <div class="col1" data-aos="fade-in" data-aos-delay="1000">
+      <div class="col1" data-aos="fade-in" data-aos-delay="1100">
         {%- for post in posts limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt-%}
         {%- endfor -%}
       </div>
 
 
-      <div class="col2" data-aos="fade-in" data-aos-delay="1000">
+      <div class="col2" data-aos="fade-in" data-aos-delay="1100">
         {%- for post in posts offset: 2 limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
       </div>
 
-      <div class="col3" data-aos="fade-in" data-aos-delay="1000">
+      <div class="col3" data-aos="fade-in" data-aos-delay="1100">
         {%- for post in posts offset: 4 limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
