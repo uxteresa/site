@@ -9,8 +9,8 @@ layout: default
 
   {{ content }}
 
-  <div class="headline" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100">
-    <h5 class="intro slide" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500"> Product Designer > Based in Lisbon, Portugal </h5>
+  <div class="headline" data-aos="fade-in" data-aos-delay="100">
+    <h5 class="intro slide" data-aos="fade-in" data-aos-delay="500"> Product Designer > Based in Lisbon, Portugal </h5>
   </div>
   
 
@@ -29,20 +29,20 @@ layout: default
     <div id="work" class="work">
 
   
-      <div class="col1" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1500">
+      <div class="col1" data-aos="fade-in" data-aos-delay="1000">
         {%- for post in posts limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt-%}
         {%- endfor -%}
       </div>
 
 
-      <div class="col2" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1500">
+      <div class="col2" data-aos="fade-in" data-aos-delay="1000">
         {%- for post in posts offset: 2 limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
       </div>
 
-      <div class="col3" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1500">
+      <div class="col3" data-aos="fade-in" data-aos-delay="1000">
         {%- for post in posts offset: 4 limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
@@ -72,8 +72,8 @@ layout: default
   <div id="about" class="about">
       <div class="about-container homepage" id="about-homepage">
           <h5 class="title">Hi! I'm Teresa</h5>
-          <p class="big" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true"> More than just a designer, I'm a curious individual intrigued by people, how they work, and what makes them tick. </p>
-          <p class="small" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">I approach the design process with a learning mindset, seeking to challenge our assumptions and better understand users' needs in order to create robust, meaningful experiences.</p>
+          <p class="big" data-aos="fade-in" > More than just a designer, I'm a curious individual intrigued by people, how they work, and what makes them tick. </p>
+          <p class="small" data-aos="fade-in" >I approach the design process with a learning mindset, seeking to challenge our assumptions and better understand users' needs in order to create robust, meaningful experiences.</p>
       </div>
   </div>
 
@@ -92,7 +92,7 @@ layout: default
         <h5 class="title">my design process</h5>
       </div>
       
-        <div id="steps" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
+        <div id="steps" data-aos="fade-in">
           {% for step in site.steps %}
             <h5 class="subtitle">{{ step.title }}</h5>
             <p class="small">{{step.content}}</p>
@@ -102,7 +102,7 @@ layout: default
   </div>
 
   <div class="more">
-    <p class="about-header intro" data-aos="fade-in" data-aos-duration="1000">Curious for more?</p>
+    <p class="about-header intro" data-aos="fade-in">Curious for more?</p>
     <a href="{{ site.baseurl}}/about/"><p class="btn-primary">Get to know me</p></a>
   </div>
 </div>

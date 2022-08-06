@@ -6,8 +6,8 @@ layout: default
   <div class="post-header">
     <h1 class="bread"><a href="{{ site.baseurl }}/work/">work</a> > {{ page.title }}</h1>
     <div class="overview">
-      <h2 class="tagline">{{ page.tagline | escape }}</h2>
-      <div class="role">
+      <h2 class="tagline" data-aos="fade-in" data-aos-delay="100">{{ page.tagline | escape }}</h2>
+      <div class="role" data-aos="fade-in" data-aos-delay="500">
         <h3>My Role
           <br> <strong>{{ page.role | escape | upcase }}</strong></h3>
       </div>
@@ -25,7 +25,7 @@ layout: default
     <a href="{{ page.link-ext }}" target="_blank"><p class="btn-secondary">Full case study</p></a>
 
     <div class="more">
-      <p class="about-header intro">Want to see more?</p>
+      <p class="about-header intro" data-aos="fade-in">Want to see more?</p>
       <a href="{{ site.baseurl}}/work/"><p class="btn-primary">Discover my work</p></a>
     </div>
   </div>
