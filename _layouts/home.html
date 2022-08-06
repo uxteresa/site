@@ -26,23 +26,23 @@ layout: default
     {%- if page.list_title -%}
       <h5 class="post-list-heading">{{ page.list_title }}</h5>
     {%- endif -%}
-    <div id="work" class="work">
+    <div id="work" class="work" data-aos="fade-in" data-aos-delay="1100">
 
   
-      <div class="col1" data-aos="fade-in" data-aos-delay="1100">
+      <div class="col1">
         {%- for post in posts limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt-%}
         {%- endfor -%}
       </div>
 
 
-      <div class="col2" data-aos="fade-in" data-aos-delay="1100">
+      <div class="col2">
         {%- for post in posts offset: 2 limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
       </div>
 
-      <div class="col3" data-aos="fade-in" data-aos-delay="1100">
+      <div class="col3">
         {%- for post in posts offset: 4 limit:2 -%}
               {%- include card.html content1=post.img-card url=post.url title=post.title sumup=post.sumup alt=post.alt -%}
         {%- endfor -%}
